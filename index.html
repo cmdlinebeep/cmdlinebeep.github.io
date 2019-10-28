@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Joel Wigton's CS50Web Portfolio</title>
         <!--<link rel="stylesheet" href="css/bootstrap.css">-->
         <link rel="stylesheet" href="static/lux.bootstrap.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     </head>
     <body>
 
@@ -29,81 +30,106 @@
         </div>
             
         <div class="container">
-            <div class="row">
-                <div class="card-deck">
-
-                    <div class="card mb-3">
-                        <h3 class="card-header">Proj0: Homepage</h3>
-                        <div class="card-body">
-                        <h5 class="card-title">Busy Daddy's Survival Guide</h5>
-                        <h6 class="card-subtitle text-muted">A facetious take</h6>
-                        </div>
-                        <img style="width: 100%; display: block;" src="static/assets/proj0_thumb.png" alt="Busy Daddy's Survival Guide">
-                        <div class="card-body">
-                        <p class="card-text">A small example homepage to cement the foundations of HTML and CSS.</p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Based on Bootstrap 4</li>
-                            <li class="list-group-item">Uses Sass to customize style</li>
-                            <li class="list-group-item">Mobile friendly and responsive</li>
-                        </ul>
-                        <div class="card-body"><a class="btn btn-primary" href="proj0/index.html" role="button">Check it out</a></div>
-                        <div class="card-footer text-muted">
-                            August 2019
-                        </div>
+            <!-- According to Boostrap, card-decks are not yet responsive on mobile. -->
+            <div class="card-deck">
+                <!-- m-3 is margin 3px top/bottom/sides -->
+                <div class="card m-3">
+                    <h3 class="card-header">Proj0: Homepage</h3>
+                    <div class="card-body">
+                    <h5 class="card-title">Busy Daddy's Survival Guide</h5>
+                    <h6 class="card-subtitle text-muted">A facetious take</h6>
                     </div>
-                    
-                    <!-- Icons from https://simpleicons.org/ -->
-
-                    <div class="card mb-3">
-                        <h3 class="card-header">Proj1: Books</h3>
-                        <div class="card-body">
-                        <h5 class="card-title">Spineless Reviews</h5>
-                        <h6 class="card-subtitle text-muted">A book reviewing site</h6>
-                        </div>
-                        <img style="width: 100%; display: block;" src="static/assets/proj1_thumb.png" alt="Spineless Reviews">
-                        <div class="card-body">
-                        <p class="card-text">A fairly functional site where users can log in, search for books, leave reviews, and see reviews made by other people.</p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Hosted PostgreSQL database</li>
-                            <li class="list-group-item">Uses the 3rd-party Goodreads API for crowdsourced reviews</li>
-                            <li class="list-group-item">Created my own API that other sites can programmatically interface with Spineless Reviews</li>
-                            <li class="list-group-item"><a target="_blank" rel="noopener noreferrer" href="https://github.com/cmdlinebeep/spineless-reviews"><img height="16" width="16" src="static/assets/github.svg" />&nbsp;&nbsp;View code on GitHub</a></li>
-                            <li class="list-group-item"><a target="_blank" rel="noopener noreferrer" href="https://youtu.be/M2o-WPxvDR8"><img height="16" width="16" src="static/assets/youtube.svg" />&nbsp;&nbsp;Watch the Video</a></li>
-                        </ul>
-                        <div class="card-body"><a class="btn btn-primary" target="_blank" rel="noopener noreferrer" href="http://spineless-reviews.herokuapp.com/" role="button">Try it Live!</a></div>
-                        <div class="card-footer text-muted">
-                            September 2019
-                        </div>
+                    <img style="width: 100%; display: block;" src="static/assets/proj0_thumb.png" alt="Busy Daddy's Survival Guide">
+                    <div class="card-body">
+                    <p class="card-text">A small example homepage to cement the foundations of HTML and CSS.</p>
                     </div>
-                
-                    <div class="card mb-3">
-                        <h3 class="card-header">Proj2: Slack</h3>
-                        <div class="card-body">
-                        <h5 class="card-title">Quack</h5>
-                        <h6 class="card-subtitle text-muted">A beaky spin on Slack</h6>
-                        </div>
-                        <img style="width: 100%; display: block;" src="static/assets/proj2_thumb.png" alt="Quack">
-                        <div class="card-body">
-                        <p class="card-text">Users can join public channels and post and read content live.  They can also Private Message (chat) with other users.</p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Responsive design is mobile-friendly</li>
-                            <li class="list-group-item">Uses JavaScript and the SocketIO web sockets protocol</li>
-                            <li class="list-group-item">Dynamically generated user avatars</li>
-                            <li class="list-group-item"><a target="_blank" rel="noopener noreferrer" href="https://github.com/cmdlinebeep/quack"><img height="16" width="16" src="static/assets/github.svg" />&nbsp;&nbsp;View code on GitHub</a></li>
-                            <li class="list-group-item"><a target="_blank" rel="noopener noreferrer" href="https://youtu.be/u77kgpxcbDY"><img height="16" width="16" src="static/assets/youtube.svg" />&nbsp;&nbsp;Watch the Video</a></li>
-                        </ul>
-                        <div class="card-body"><a class="btn btn-primary" target="_blank" rel="noopener noreferrer" href="http://quack-addicts.herokuapp.com/" role="button">Try it Live!</a></div>
-                        <div class="card-footer text-muted">
-                            October 2019
-                        </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Based on Bootstrap 4</li>
+                        <li class="list-group-item">Uses Sass to customize style</li>
+                        <li class="list-group-item">Mobile friendly and responsive</li>
+                    </ul>
+                    <div class="card-body"><a class="btn btn-primary" href="proj0/index.html" role="button">Check it out</a></div>
+                    <div class="card-footer text-muted">
+                        August 2019
                     </div>
-
+                </div>
+                <!-- Icons from https://simpleicons.org/ -->
+                <div class="card m-3">
+                    <h3 class="card-header">Proj1: Books</h3>
+                    <div class="card-body">
+                    <h5 class="card-title">Spineless Reviews</h5>
+                    <h6 class="card-subtitle text-muted">A book reviewing site</h6>
+                    </div>
+                    <img style="width: 100%; display: block;" src="static/assets/proj1_thumb.png" alt="Spineless Reviews">
+                    <div class="card-body">
+                    <p class="card-text">A fairly functional site where users can log in, search for books, leave reviews, and see reviews made by other people.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Hosted PostgreSQL database</li>
+                        <li class="list-group-item">Uses the 3rd-party Goodreads API for crowdsourced reviews</li>
+                        <li class="list-group-item">Created my own API that other sites can programmatically interface with Spineless Reviews</li>
+                        <li class="list-group-item"><a target="_blank" rel="noopener noreferrer" href="https://github.com/cmdlinebeep/spineless-reviews"><img height="16" width="16" src="static/assets/github.svg" />&nbsp;&nbsp;View code on GitHub</a></li>
+                        <li class="list-group-item"><a target="_blank" rel="noopener noreferrer" href="https://youtu.be/M2o-WPxvDR8"><img height="16" width="16" src="static/assets/youtube.svg" />&nbsp;&nbsp;Watch the Video</a></li>
+                    </ul>
+                    <div class="card-body"><a class="btn btn-primary" target="_blank" rel="noopener noreferrer" href="http://spineless-reviews.herokuapp.com/" role="button">Try it Live!</a></div>
+                    <div class="card-footer text-muted">
+                        September 2019
+                    </div>
+                </div>
+                <div class="card m-3">
+                    <h3 class="card-header">Proj2: Slack</h3>
+                    <div class="card-body">
+                    <h5 class="card-title">Quack</h5>
+                    <h6 class="card-subtitle text-muted">A beaky spin on Slack</h6>
+                    </div>
+                    <img style="width: 100%; display: block;" src="static/assets/proj2_thumb.png" alt="Quack">
+                    <div class="card-body">
+                    <p class="card-text">Users can join public channels and post and read content live.  They can also Private Message (chat) with other users.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Responsive design is mobile-friendly</li>
+                        <li class="list-group-item">Uses JavaScript and the SocketIO web sockets protocol</li>
+                        <li class="list-group-item">Dynamically generated user avatars</li>
+                        <li class="list-group-item"><a target="_blank" rel="noopener noreferrer" href="https://github.com/cmdlinebeep/quack"><img height="16" width="16" src="static/assets/github.svg" />&nbsp;&nbsp;View code on GitHub</a></li>
+                        <li class="list-group-item"><a target="_blank" rel="noopener noreferrer" href="https://youtu.be/u77kgpxcbDY"><img height="16" width="16" src="static/assets/youtube.svg" />&nbsp;&nbsp;Watch the Video</a></li>
+                    </ul>
+                    <div class="card-body"><a class="btn btn-primary" target="_blank" rel="noopener noreferrer" href="http://quack-addicts.herokuapp.com/" role="button">Try it Live!</a></div>
+                    <div class="card-footer text-muted">
+                        October 2019
+                    </div>
                 </div>
             </div>
-        </div>
+    
+            <div class="card-deck">
+                <div class="card m-3">
+                    <h3 class="card-header">Proj3: Pizza</h3>
+                    <div class="card-body">
+                    <h5 class="card-title">PiNOTchio's Pizzeria</h5>
+                    <h6 class="card-subtitle text-muted">Eat More Pizza</h6>
+                    </div>
+                    <img style="width: 100%; display: block;" src="static/assets/proj3_thumb.png" alt="PiNOTchio's Pizzeria">
+                    <div class="card-body">
+                    <p class="card-text">A web app for taking restaurant orders.  Faithfully reproduced reference site's bad design ;-)</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Built with Django framework</li>
+                        <li class="list-group-item">Materialize (Bootstrap) framework with custom Sass for styling</li>
+                        <li class="list-group-item">Stripe API to take credit card payment</li>
+                        <li class="list-group-item"><a target="_blank" rel="noopener noreferrer" href="https://github.com/cmdlinebeep/piNOTchios"><img height="16" width="16" src="static/assets/github.svg" />&nbsp;&nbsp;View code on GitHub</a></li>
+                        <li class="list-group-item"><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=MIQf5PegGhY"><img height="16" width="16" src="static/assets/youtube.svg" />&nbsp;&nbsp;Watch the Video</a></li>
+                    </ul>
+                    <!-- <div class="card-body"><a class="btn btn-primary" href="proj0/index.html" role="button">Check it out</a></div> -->
+                    <div class="card-footer text-muted">
+                        October 2019
+                    </div>
+                </div>
+                <div class="card m-3">
+                </div>
+                <div class="card m-3">
+                </div>
+            </div>
+
+        </div>  <!-- end container -->
         
         <div class="container">
             <footer id="footer">
