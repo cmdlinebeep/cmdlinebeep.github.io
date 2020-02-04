@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>KnewsStand: read all the news</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KnewsStand is your all-access-pass to all the news in one subscription.">
+    <meta name="author" content="KnewsStand">    
+    <link rel="shortcut icon" href="favicon.ico"> 
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+    
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/owlcarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/plugins/owlcarousel/dist/assets/owl.theme.default.min.css">
+	<!-- This one failing to load, timeout -->
+	<!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css"> -->
+
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+
+</head> 
+
+<body>    
+    <header class="header fixed-top">	    
+        <div class="branding">
+            <div class="container-fluid position-relative">
+				<nav class="navbar navbar-expand-lg" >
+					<!-- <div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon mr-2" src="assets/images/site-logo.svg" alt="logo"><span class="logo-text">Knews<span class="text-alt">Stand</span></span></a></div> -->
+					<div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon mr-2" src="assets/images/temp-logo.svg" alt="logo" width=75px><span class="logo-text">Knews<span class="text-alt">Stand</span></span></a></div>
+
+					<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+	                    <span> </span>
+	                    <span> </span>
+	                    <span> </span>
+	                </button>
+					
+					<div class="collapse navbar-collapse" id="navigation">
+						<!-- <ul class="social-list list-inline mt-3 mt-lg-0 mb-lg-0 d-flex ml-lg-5 mr-lg-5">
+			                <li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+			                <li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
+			                <li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>
+						</ul> -->
+						
+						<ul class="navbar-nav ml-lg-auto">
+							<li class="nav-item mr-lg-4">
+							   <a class="nav-link" href="pricing.html">Pricing</a>
+							</li>
+							<!-- <li class="nav-item dropdown mr-lg-4">
+						        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						          Docs
+						        </a>
+						        <div class="dropdown-menu dropdown-menu-right rounded shadow menu-animate slideIn" aria-labelledby="navbarDropdown">
+						            <a class="dropdown-item has-icon" href="docs.html"><span class="theme-icon-holder mr-2"><i class="fas fa-home fa-fw"></i></span>Docs Home</a>
+						          
+						            <div class="dropdown-divider m-0"></div>
+						            
+						            <a class="dropdown-item has-icon" href="docs-page.html#section-1"><span class="theme-icon-holder mr-2"><i class="fas fa-map-signs fa-fw"></i></span>Introduction</a>
+						            <a class="dropdown-item has-icon" href="docs-page.html#section-2"><span class="theme-icon-holder mr-2"><i class="fas fa-arrow-down fa-fw"></i></span>Installation</a>
+						            <a class="dropdown-item has-icon" href="docs-page.html#section-3"><span class="theme-icon-holder mr-2"><i class="fas fa-box fa-fw"></i></span>APIs</a>
+						            <a class="dropdown-item has-icon" href="docs-page.html#section-4"><span class="theme-icon-holder mr-2"><i class="fas fa-cogs fa-fw"></i></span>Integrations</a>
+						            <a class="dropdown-item has-icon" href="docs-page.html#section-5"><span class="theme-icon-holder mr-2"><i class="fas fa-tools fa-fw"></i></span>Utilities</a>
+						            <a class="dropdown-item has-icon" href="docs-page.html#section-6"><span class="theme-icon-holder mr-2"><i class="fas fa-laptop-code fa-fw"></i></span>Web</a>
+						            <a class="dropdown-item has-icon" href="docs-page.html#section-7"><span class="theme-icon-holder mr-2"><i class="fas fa-tablet-alt fa-fw"></i></span>Mobile</a>
+						            <a class="dropdown-item has-icon" href="docs-page.html#section-8"><span class="theme-icon-holder mr-2"><i class="fas fa-book-reader fa-fw"></i></span>Resources</a>
+						            <a class="dropdown-item has-icon" href="docs-page.html#section-9"><span class="theme-icon-holder mr-2"><i class="fas fa-lightbulb fa-fw"></i></span>FAQs</a>
+						        </div>
+						    </li> -->
+							<li class="nav-item mr-lg-0">
+							    <a class="nav-link" href="contact.html">Contact</a>
+							</li>
+							<li class="nav-item mr-lg-4">
+							    <a class="nav-link" href="features.html">Login</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+
+            </div><!--//container-->
+        </div><!--//branding-->
+    </header><!--//header-->
+
+    <section class="hero-section py-3 py-md-5">
+	    <div class="container">
+		    <div class="row">
+			    <div class="col-12 col-lg-6 pt-3 mb-5 mb-lg-0">
+				    <h1 class="site-headline font-weight-bold mb-3">One digital newspaper subscription to rule them all.</h1>
+				    <div class="site-tagline mb-4">We get it.  You love to stay informed, but buying multiple subscriptions for each digital news publisher just doesn't seem worth the money.  Time to hug the paywall?<br><br>What if instead one subscription got you access to all of <br><span id="typewriter" class="text-primary font-weight-bold"></span>?</div>
+				    <div class="cta-btns mb-lg-3">
+					    <a class="btn btn-primary mr-2 mb-3" href="pricing.html">Join Now<!-- <i class="fas fa-arrow-alt-circle-right ml-2"></i> --></a>
+					    <!-- <a class="btn btn-secondary mb-3" href="docs.html">View Docs<i class="fas fa-arrow-alt-circle-right ml-2"></i></a> -->
+				    </div>
+			    </div>
+			    <div class="col-12 col-lg-6 text-center">
+					<!-- <img class="hero-figure mx-auto" src="assets/images/promo-figure-alt.svg" alt=""> -->
+					<img class="hero-figure mx-auto" src="assets/images/streamline-free/cat-book.png" alt="">
+			    </div>
+		    </div><!--//row-->
+	    </div>
+    </section><!--//hero-section-->
+	
+	<section class="how-section theme-bg-light py-5">
+	    <div class="container">
+		    <h3 class="mb-2 text-center font-weight-bold section-title">How It Works</h3>
+		    <div class="mb-5 text-center section-intro">It's easy meow</div>
+		    
+		    <div class="row">
+			    <div class="item col-12 col-md-4">
+				    <div class="icon-holder">
+						<!-- <img src="assets/images/streamline-free/monitor-loading-progress.svg" alt=""> -->
+						<img src="assets/images/streamline-free/cat-login.png" alt="">
+					    <div class="arrow-holder d-none d-lg-inline-block"></div>
+				    </div><!--//icon-holder-->
+				    <div class="desc p-3">
+						<h5><span class="step-count mr-2">1</span>Log into KnewsStand</h5>
+					    <p>Open your browser on whatever device you plan to read the news on and log into KnewsStand.  We automatically log you into all our partner sites, all at once.</p>
+				    </div><!--//desc-->
+			    </div><!--//item-->
+			    <div class="item col-12 col-md-4">
+				    <div class="icon-holder">
+						<!-- <img src="assets/images/streamline-free/monitor-window.svg" alt=""> -->
+						<img src="assets/images/streamline-free/cat-laptop.png" alt="">
+					    <div class="arrow-holder d-none d-lg-inline-block"></div>
+				    </div><!--//icon-holder-->
+				    <div class="desc p-3">
+						<h5><span class="step-count mr-2">2</span>Read the News</h5>
+					    <p>Now simply navigate to any of our partner sites and read the news to your heart's content.  You're aleady logged in everywhere!</p>
+				    </div><!--//desc-->
+			    </div><!--//item-->
+			    <div class="item col-12 col-md-4">
+				    <div class="icon-holder">
+						<!-- <img src="assets/images/streamline-free/monitor-cash-credit-card.svg" alt=""> -->
+						<img src="assets/images/streamline-free/cat-success.png" alt="">
+				    </div><!--//icon-holder-->
+				    <div class="desc p-3">
+						<h5><span class="step-count mr-2">3</span>There is no step 3</h5>
+					    <p>You have already reached the pinnacle of success.  Tell your friends!</p>
+				    </div><!--//desc-->
+			    </div><!--//item-->
+		    </div><!--//row-->
+	    </div><!--//container-->
+	</section><!--//how-section-->
+	
+    <section class="benefits-section py-5">
+	    <div class="container">
+		    <h3 class="mb-2 text-center font-weight-bold section-title">Made for You</h3>
+		    <div class="mb-5 text-center section-intro">With features like catnip for news junkies</div>
+		    <div class="row">
+		        <div class="item col-12 col-md-6 col-lg-3">
+				    <div class="item-inner rounded">
+					    <div class="icon-holder text-center mx-auto mb-3">
+					        <i class="fas fa-mobile-alt"></i>
+					    </div><!--//icon-holder-->
+					    <h5 class="mb-3">Works Anywhere</h5>
+					    <div>Works on your mobile device, your desktop PC, your laptop.  If it's got a browser in it, it just works.</div>
+					    <!-- <div class="mt-2"><a href="features.html">Learn more &rarr;</a></div> -->
+				    </div><!--//item-inner-->
+			    </div><!--//item-->
+			    
+			    <div class="item col-12 col-md-6 col-lg-3">
+				    <div class="item-inner rounded">
+					    <div class="icon-holder text-center mx-auto mb-3">
+					        <i class="fas fa-infinity"></i>
+					    </div><!--//icon-holder-->
+					    <h5 class="mb-3">Unlimited News</h5>
+					    <div>No article limit.  No bandwidth throttling.  No fuss for puss.</div>
+					    <!-- <div class="mt-2"><a href="features.html">Learn more &rarr;</a></div> -->
+				    </div><!--//item-inner-->
+			    </div><!--//item-->
+			    
+			    <div class="item col-12 col-md-6 col-lg-3">
+				    <div class="item-inner rounded">
+					    <div class="icon-holder text-center mx-auto mb-3">
+					        <i class="fas fa-rocket"></i>
+					    </div><!--//icon-holder-->
+					    <h5 class="mb-3">Ever-growing Network</h5>
+					    <div>We are hard at work adding partner sites to the KnewsStand network.  Yep, you get every new partner, too.</div>
+					    <!-- <div class="mt-2"><a href="features.html">Learn more &rarr;</a></div> -->
+				    </div><!--//item-inner-->
+			    </div><!--//item-->
+			    
+			    <div class="item col-12 col-md-6 col-lg-3">
+				    <div class="item-inner rounded">
+					    <div class="icon-holder text-center mx-auto mb-3">
+					        <i class="fas fa-person-booth"></i>
+					    </div><!--//icon-holder-->
+					    <h5 class="mb-3">Save Democracy</h5>
+					    <div>Local papers are shuttering daily.  We truly believe an educated public is needed for a healthy democracy.</div>
+					    <!-- <div class="mt-2"><a href="docs.html">View docs &rarr;</a></div> -->
+				    </div><!--//item-inner-->
+			    </div><!--//item-->
+			    
+		    </div><!--//row-->
+		    <!-- <div class="pt-3 text-center">
+			    <a class="btn btn-light" href="features.html">View All Features<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+		    </div> -->
+	    </div>
+	</section><!--//benefits-section-->
+    
+    
+    
+    <section class="cta-section text-center py-5 theme-bg-dark position-relative">
+	    <div class="theme-bg-shapes-right"></div>
+	    <div class="theme-bg-shapes-left"></div>
+	    <div class="container">
+		    <h3 class="mb-2 text-white mb-3">Get Reading in No Time</h3>
+		    <div class="section-intro text-white mb-3 single-col-max mx-auto">KnewsStand makes it super easy to acess multiple digital news subscriptions for an unbeatable value.</div>
+		    <div class="pt-3 text-center">
+			    <a class="btn btn-light" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderpro-bootstrap-4-startup-template-for-software-projects/">Join Now<!-- <i class="fas fa-arrow-alt-circle-right ml-2"></i> --></a>
+		    </div>
+	    </div>
+    </section><!--//cta-section-->
+
+    <div class="container">
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+	</div>     
+    
+    <footer class="footer">
+	    
+	    <!-- <div class="newsletter-section py-5">
+		    <div class="container text-center">
+			    <h4 class="mb-2">Join Our Newsletter</h4>
+			    <div class="section-intro mb-2">Sign up to receive latest updates, features, and news!</div>
+		        <form class="signup-form form-inline justify-content-center pt-3">
+                    <div class="form-group">
+                        <label class="sr-only" for="semail">Email address</label>
+                        <input type="email" id="semail" name="semail1" class="form-control mr-md-1 semail" placeholder="Enter email">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                </form>
+		    </div>
+	    </div> -->
+	    <div class="footer-bottom text-center pb-5">
+	        <small class="copyright">&copy; KnewsStand, 2019-2020.&nbsp;&nbsp;&nbsp;&nbsp;Icons by <a href="https://icons8.com/" target="_blank">Icons8</a></small>
+	        <!-- <ul class="social-list list-unstyled pt-4 mb-0">
+			    <li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li> 
+	            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+	            <li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
+	            <li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>
+	            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f fa-fw"></i></a></li>
+	            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-fw"></i></a></li>
+	        </ul> -->
+	    </div>
+    </footer>
+       
+    <!-- Javascript -->          
+    <script src="assets/plugins/jquery-3.4.1.min.js"></script>
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+    
+    
+    <!-- Page Specific JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script src="assets/js/highlight-custom.js"></script> 
+    <script src="assets/plugins/typewriterjs/dist/core.js"></script> 
+    <script src="assets/js/typewriter-custom.js"></script> 
+    <script src="assets/plugins/owlcarousel/dist/owl.carousel.min.js"></script> 
+    <script src="assets/js/owlcarousel-custom.js"></script> 
+    
+
+
+</body>
+</html> 
+
